@@ -835,6 +835,8 @@ function htmlToPdfMake(htmlText, options) {
             }
             case "font-weight": {
               if (value === "bold") ret.push({key:"bold", value:true});
+              if (value === "700") ret.push({key:"bold", value:true});
+              if (value === "normal") ret.push({key:"bold", value:false});
               break;
             }
             case "text-decoration": {
